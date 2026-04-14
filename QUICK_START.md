@@ -1,4 +1,4 @@
-# ðŸš€ Quick Start Guide
+# Quick Start Guide
 
 ## Prerequisites
 
@@ -59,28 +59,28 @@ Services available at:
 
 ---
 
-## ðŸ“ Project Structure Quick Reference
+## Project Structure Quick Reference
 
 ```
 backend/
-â”œâ”€â”€ models/User.js          # Database schema
-â”œâ”€â”€ controllers/            # API logic
-â”œâ”€â”€ services/               # Business logic
-â”œâ”€â”€ routes/                 # API endpoints
-â”œâ”€â”€ middleware/auth.js      # Authentication
-â””â”€â”€ seeds/seed.js          # Database seeding
+models/User.js          # Database schema
+controllers/            # API logic
+services/               # Business logic
+routes/                 # API endpoints
+middleware/auth.js      # Authentication
+seeds/seed.js          # Database seeding
 
 frontend/
-â”œâ”€â”€ pages/                 # Page components
-â”œâ”€â”€ components/            # Reusable UI components
-â”œâ”€â”€ context/AuthContext    # Global auth state
-â”œâ”€â”€ services/api/          # API calls
-â””â”€â”€ hooks/                 # Custom hooks
+ pages/                 # Page components
+ components/            # Reusable UI components
+ context/AuthContext    # Global auth state
+ services/api/          # API calls
+ hooks/                 # Custom hooks
 ```
 
 ---
 
-## ðŸ”‘ Key Files to Review
+## Key Files to Review
 
 **Backend:**
 - `backend/server.js` - Main entry point
@@ -96,7 +96,7 @@ frontend/
 
 ---
 
-## ðŸ§ª Testing
+## Testing
 
 ### Admin Dashboard Features
 1. Login as admin@test.com
@@ -117,7 +117,7 @@ frontend/
 
 ---
 
-## âš™ï¸ Environment Configuration
+##  Environment Configuration
 
 ### Backend (.env)
 ```env
@@ -133,7 +133,7 @@ VITE_API_BASE_URL=http://localhost:5000/api
 
 ---
 
-## ðŸ’¡ Common Tasks
+##  Common Tasks
 
 ### Reset Database
 ```bash
@@ -163,7 +163,7 @@ docker-compose down
 
 ---
 
-## ðŸ› Troubleshooting
+##  Troubleshooting
 
 ### MongoDB Connection Error
 - Make sure MongoDB is running: `mongod`
@@ -183,7 +183,7 @@ docker-compose down
 
 ---
 
-## ðŸš€ Next Steps
+## Next Steps
 
 1. **Explore the Dashboard** - Get familiar with the UI
 2. **Review the Code** - Study the architecture
@@ -193,7 +193,7 @@ docker-compose down
 
 ---
 
-## ðŸ“ž Need Help?
+##  Need Help?
 
 Check these files for more info:
 - `README.md` - Full documentation
@@ -202,4 +202,4 @@ Check these files for more info:
 
 ---
 
-**Happy coding! ðŸŽ‰**
+**Happy coding!**

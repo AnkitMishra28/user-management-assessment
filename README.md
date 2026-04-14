@@ -1,8 +1,8 @@
-# User Management System - MERN Stack
+﻿# User Management System - MERN Stack
 
 A professional, production-ready User Management System with Role-Based Access Control (RBAC) built with the MERN stack.
 
-## ðŸŒŸ Features
+## Features
 
 ### Authentication & Authorization
 - JWT-based authentication with access + refresh tokens
@@ -34,7 +34,7 @@ A professional, production-ready User Management System with Role-Based Access C
 - Change password functionality
 - Audit trail display
 
-## ðŸ› ï¸ Tech Stack
+## Tech Stack
 
 ### Backend
 - **Node.js** - Runtime environment
@@ -54,13 +54,13 @@ A professional, production-ready User Management System with Role-Based Access C
 - **Lucide React** - Icon library
 - **Vite** - Build tool
 
-## ðŸ“‹ Prerequisites
+## Prerequisites
 
 - Node.js (v16 or higher)
 - MongoDB (v5 or higher)
 - npm or yarn
 
-## ðŸš€ Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
@@ -122,7 +122,7 @@ npm run seed
 This creates:
 - Admin: admin@test.com / Admin@123456789
 - Manager: manager@test.com / Manager@123456789
-- User: john@test.com / John@12345678
+- User: ankit@test.com / Ankit@12345678
 
 Start the backend server:
 
@@ -166,7 +166,7 @@ npm run dev
 
 Frontend will run on `http://localhost:3000`
 
-## ðŸ“š API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /api/auth/login` - Login user
@@ -184,82 +184,80 @@ Frontend will run on `http://localhost:3000`
 - `DELETE /api/users/:id` - Delete user (soft delete, admin only)
 - `GET /api/users/stats` - Get user statistics (admin only)
 
-## ðŸ—ï¸ Project Structure
+## Project Structure
 
 ```
 UserManagementSystem_InternAssessment/
-â”œâ”€â”€ backend/
-â”‚   â”œâ”€â”€ config/
-â”‚   â”‚   â””â”€â”€ database.js           # MongoDB connection
-â”‚   â”œâ”€â”€ controllers/
-â”‚   â”‚   â”œâ”€â”€ authController.js     # Auth logic
-â”‚   â”‚   â””â”€â”€ userController.js     # User management logic
-â”‚   â”œâ”€â”€ routes/
-â”‚   â”‚   â”œâ”€â”€ authRoutes.js         # Auth endpoints
-â”‚   â”‚   â””â”€â”€ userRoutes.js         # User endpoints
-â”‚   â”œâ”€â”€ middleware/
-â”‚   â”‚   â””â”€â”€ auth.js               # JWT authentication
-â”‚   â”œâ”€â”€ models/
-â”‚   â”‚   â””â”€â”€ User.js               # User schema
-â”‚   â”œâ”€â”€ services/
-â”‚   â”‚   â”œâ”€â”€ authService.js        # Auth business logic
-â”‚   â”‚   â””â”€â”€ userService.js        # User business logic
-â”‚   â”œâ”€â”€ utils/
-â”‚   â”‚   â”œâ”€â”€ errorHandler.js       # Error handling
-â”‚   â”‚   â”œâ”€â”€ jwtUtils.js           # JWT utilities
-â”‚   â”‚   â”œâ”€â”€ logger.js             # Logging utility
-â”‚   â”‚   â””â”€â”€ validators.js         # Input validation
-â”‚   â”œâ”€â”€ seeds/
-â”‚   â”‚   â”œâ”€â”€ seed.js               # Seed runner
-â”‚   â”‚   â””â”€â”€ seedData.js           # Seed data
-â”‚   â”œâ”€â”€ server.js                 # Main server file
-â”‚   â”œâ”€â”€ package.json
-â”‚   â””â”€â”€ .env.example
-â”‚
-â”œâ”€â”€ frontend/
-â”‚   â”œâ”€â”€ src/
-â”‚   â”‚   â”œâ”€â”€ components/
-â”‚   â”‚   â”‚   â”œâ”€â”€ UI.jsx            # Reusable UI components
-â”‚   â”‚   â”‚   â”œâ”€â”€ Layout.jsx        # Header & Sidebar
-â”‚   â”‚   â”‚   â”œâ”€â”€ Toast.jsx         # Toast notifications
-â”‚   â”‚   â”‚   â””â”€â”€ ProtectedRoute.jsx # Protected routing
-â”‚   â”‚   â”œâ”€â”€ pages/
-â”‚   â”‚   â”‚   â”œâ”€â”€ LoginPage.jsx
-â”‚   â”‚   â”‚   â”œâ”€â”€ DashboardPage.jsx
-â”‚   â”‚   â”‚   â”œâ”€â”€ UsersPage.jsx
-â”‚   â”‚   â”‚   â”œâ”€â”€ EditUserPage.jsx
-â”‚   â”‚   â”‚   â”œâ”€â”€ CreateUserPage.jsx
-â”‚   â”‚   â”‚   â””â”€â”€ ProfilePage.jsx
-â”‚   â”‚   â”œâ”€â”€ layouts/
-â”‚   â”‚   â”‚   â””â”€â”€ AppLayout.jsx     # Main layout
-â”‚   â”‚   â”œâ”€â”€ context/
-â”‚   â”‚   â”‚   â””â”€â”€ AuthContext.jsx   # Auth state management
-â”‚   â”‚   â”œâ”€â”€ hooks/
-â”‚   â”‚   â”‚   â””â”€â”€ index.js          # Custom hooks
-â”‚   â”‚   â”œâ”€â”€ services/
-â”‚   â”‚   â”‚   â””â”€â”€ api/
-â”‚   â”‚   â”‚       â”œâ”€â”€ client.js     # Axios instance
-â”‚   â”‚   â”‚       â””â”€â”€ index.js      # API endpoints
-â”‚   â”‚   â”œâ”€â”€ utils/
-â”‚   â”‚   â”‚   â”œâ”€â”€ helpers.js        # Helper functions
-â”‚   â”‚   â”‚   â””â”€â”€ toast.js          # Toast utilities
-â”‚   â”‚   â”œâ”€â”€ animations/
-â”‚   â”‚   â”‚   â””â”€â”€ variants.js       # Framer Motion variants
-â”‚   â”‚   â”œâ”€â”€ App.jsx
-â”‚   â”‚   â”œâ”€â”€ main.jsx
-â”‚   â”‚   â””â”€â”€ index.css
-â”‚   â”œâ”€â”€ index.html
-â”‚   â”œâ”€â”€ vite.config.js
-â”‚   â”œâ”€â”€ tailwind.config.js
-â”‚   â”œâ”€â”€ package.json
-â”‚   â””â”€â”€ .env.example
-â”‚
-â”œâ”€â”€ docker-compose.yml
-â”œâ”€â”€ README.md
-â””â”€â”€ .gitignore
+backend/
+config/
+   database.js           # MongoDB connection
+controllers/
+ authController.js     # Auth logic
+ userController.js     # User management logic
+routes/
+authRoutes.js         # Auth endpoints
+ userRoutes.js         # User endpoints
+middleware/
+auth.js               # JWT authentication
+models/
+ User.js               # User schema
+services/
+authService.js        # Auth business logic
+userService.js        # User business logic
+utils/
+errorHandler.js       # Error handling
+jwtUtils.js           # JWT utilities
+logger.js             # Logging utility
+validators.js         # Input validation
+seeds/
+ seed.js               # Seed runner
+seedData.js           # Seed data
+server.js                 # Main server file
+package.json
+.env.example
+ frontend/
+  src/
+     components/
+    UI.jsx            # Reusable UI components
+    Layout.jsx        # Header & Sidebar
+    Toast.jsx         # Toast notifications
+    ProtectedRoute.jsx # Protected routing
+     pages/
+     LoginPage.jsx
+     DashboardPage.jsx
+     UsersPage.jsx
+     EditUserPage.jsx
+     CreateUserPage.jsx
+     ProfilePage.jsx
+     layouts/
+     AppLayout.jsx     # Main layout
+    context/
+    AuthContext.jsx   # Auth state management
+    hooks/
+     index.js          # Custom hooks
+    services/
+     api/
+     client.js     # Axios instance
+     index.js      # API endpoints
+    utils/
+    helpers.js        # Helper functions
+    toast.js          # Toast utilities
+     animations/
+    variants.js       # Framer Motion variants
+    App.jsx
+    main.jsx
+    index.css
+  index.html
+  vite.config.js
+  tailwind.config.js
+  package.json
+  .env.example
+docker-compose.yml
+README.md
+.gitignore
 ```
 
-## ðŸ³ Docker Setup
+## Docker Setup
 
 ### Prerequisites
 - Docker
@@ -290,19 +288,19 @@ docker-compose exec backend npm run seed
 docker-compose down
 ```
 
-## ðŸ”’ Security Best Practices
+## Security Best Practices
 
-- âœ… JWT tokens with short expiration times
-- âœ… Refresh token rotation mechanism
-- âœ… Secure password hashing with bcryptjs
-- âœ… Input validation on all endpoints
-- âœ… CORS properly configured
-- âœ… Environment variables for sensitive data
-- âœ… Protected routes with role-based middleware
-- âœ… Soft deletes for data preservation
-- âœ… Audit trails with createdBy/updatedBy
+- JWT tokens with short expiration times
+- Refresh token rotation mechanism
+- Secure password hashing with bcryptjs
+- Input validation on all endpoints
+- CORS properly configured
+- Environment variables for sensitive data
+- Protected routes with role-based middleware
+- Soft deletes for data preservation
+- Audit trails with createdBy/updatedBy
 
-## ðŸŽ¨ UI/UX Highlights
+## UI/UX Highlights
 
 - Modern, minimal SaaS-style design inspired by Stripe/Linear/Notion
 - Glassmorphism and gradient effects
@@ -313,7 +311,7 @@ docker-compose down
 - Role-based UI rendering
 - Professional typography and spacing
 
-## ðŸ“ API Response Format
+## API Response Format
 
 All API responses follow a consistent format:
 
@@ -340,7 +338,7 @@ All API responses follow a consistent format:
 }
 ```
 
-## ðŸ§ª Testing with Demo Credentials
+## Testing with Demo Credentials
 
 After seeding the database, login with:
 
@@ -350,7 +348,7 @@ After seeding the database, login with:
 | Manager | manager@test.com | Manager@123456789 |
 | User    | john@test.com    | John@12345678     |
 
-## ðŸŒ Deployment
+## Deployment
 
 ### Backend (Render/Railway)
 1. Push code to Git repository
@@ -370,29 +368,29 @@ After seeding the database, login with:
 2. Get connection string
 3. Update `MONGODB_URI` in backend environment variables
 
-## ðŸ“ž Support & Contribution
+## Support & Contribution
 
 For issues and feature requests, please create an issue in the repository.
 
-## ðŸ“„ License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## âœ¨ Key Features Summary
+##  Key Features Summary
 
-- âœ… Complete MERN stack implementation
-- âœ… Role-based access control (RBAC)
-- âœ… JWT authentication with refresh tokens
-- âœ… Beautiful, production-ready UI
-- âœ… Responsive design
-- âœ… Error handling and validation
-- âœ… Pagination and filtering
-- âœ… Soft delete functionality
-- âœ… Audit trails
-- âœ… Docker support
-- âœ… Deployment ready
-- âœ… Clean, modular, scalable code
+- Complete MERN stack implementation
+- Role-based access control (RBAC)
+- JWT authentication with refresh tokens
+- Beautiful, production-ready UI
+- Responsive design
+- Error handling and validation
+- Pagination and filtering
+- Soft delete functionality
+- Audit trails
+- Docker support
+- Deployment ready
+- Clean, modular, scalable code
 
 ---
 
-**Built with â¤ï¸ by a professional full-stack engineer**
+**Built by a professional full-stack engineer**

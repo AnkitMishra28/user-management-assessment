@@ -1,10 +1,10 @@
-# ðŸŽ¯ User Management System - Project Overview
+# User Management System - Project Overview
 
-## ðŸ“Œ Project Summary
+## Project Summary
 
 A complete, production-ready **MERN Stack** application for User Management with **Role-Based Access Control (RBAC)**. Built with modern best practices, beautiful UI/UX, and enterprise-grade security.
 
-### ðŸŽ“ Suitable For
+### Suitable For
 - Internship assessment projects
 - Portfolio showcase
 - Learning MERN stack
@@ -13,108 +13,103 @@ A complete, production-ready **MERN Stack** application for User Management with
 
 ---
 
-## âœ¨ Key Highlights
+## Key Highlights
 
 | Feature | Status | Details |
 |---------|--------|---------|
-| **MERN Stack** | âœ… Complete | React, Node, Express, MongoDB |
-| **Authentication** | âœ… JWT | Access + Refresh tokens |
-| **RBAC** | âœ… 3 Roles | Admin, Manager, User |
-| **User Management** | âœ… CRUD | Create, Read, Update, Delete |
-| **UI/UX** | âœ… Premium | Modern, animated, responsive |
-| **Security** | âœ… Implemented | Hashing, validation, CORS |
-| **Docker** | âœ… Ready | docker-compose included |
-| **Documentation** | âœ… Complete | README, guides, architecture |
+| **MERN Stack** |  Complete | React, Node, Express, MongoDB |
+| **Authentication** |  JWT | Access + Refresh tokens |
+| **RBAC** |  3 Roles | Admin, Manager, User |
+| **User Management** |  CRUD | Create, Read, Update, Delete |
+| **UI/UX** |  Premium | Modern, animated, responsive |
+| **Security** |  Implemented | Hashing, validation, CORS |
+| **Docker** |  Ready | docker-compose included |
+| **Documentation** |  Complete | README, guides, architecture |
 
 ---
 
-## ðŸ—ï¸ Project Structure
+## Project Structure
 
 ```
 UserManagementSystem_InternAssessment/
-â”‚
-â”œâ”€â”€ ðŸ“ backend/                    # Node.js + Express Backend
-â”‚   â”œâ”€â”€ ðŸ“ config/                 # Database configuration
-â”‚   â”œâ”€â”€ ðŸ“ models/                 # Mongoose schemas
-â”‚   â”œâ”€â”€ ðŸ“ controllers/            # Request handlers
-â”‚   â”œâ”€â”€ ðŸ“ routes/                 # API routes
-â”‚   â”œâ”€â”€ ðŸ“ middleware/             # Auth middleware
-â”‚   â”œâ”€â”€ ðŸ“ services/               # Business logic
-â”‚   â”œâ”€â”€ ðŸ“ utils/                  # Helper functions
-â”‚   â”œâ”€â”€ ðŸ“ seeds/                  # Database seeding
-â”‚   â”œâ”€â”€ server.js                  # Main server file
-â”‚   â”œâ”€â”€ package.json
-â”‚   â”œâ”€â”€ .env                       # Development env vars
-â”‚   â”œâ”€â”€ .env.example               # Env template
-â”‚   â”œâ”€â”€ .gitignore
-â”‚   â””â”€â”€ Dockerfile
-â”‚
-â”œâ”€â”€ ðŸ“ frontend/                   # React Frontend
-â”‚   â”œâ”€â”€ ðŸ“ src/
-â”‚   â”‚   â”œâ”€â”€ ðŸ“ components/         # Reusable UI components
-â”‚   â”‚   â”œâ”€â”€ ðŸ“ pages/              # Page components
-â”‚   â”‚   â”œâ”€â”€ ðŸ“ layouts/            # Layout wrapper
-â”‚   â”‚   â”œâ”€â”€ ðŸ“ context/            # Auth context
-â”‚   â”‚   â”œâ”€â”€ ðŸ“ hooks/              # Custom hooks
-â”‚   â”‚   â”œâ”€â”€ ðŸ“ services/api/       # API client
-â”‚   â”‚   â”œâ”€â”€ ðŸ“ utils/              # Helper functions
-â”‚   â”‚   â”œâ”€â”€ ðŸ“ animations/         # Animation variants
-â”‚   â”‚   â”œâ”€â”€ App.jsx                # Main app component
-â”‚   â”‚   â”œâ”€â”€ main.jsx               # React entry point
-â”‚   â”‚   â””â”€â”€ index.css              # Global styles
-â”‚   â”œâ”€â”€ index.html
-â”‚   â”œâ”€â”€ vite.config.js
-â”‚   â”œâ”€â”€ tailwind.config.js
-â”‚   â”œâ”€â”€ package.json
-â”‚   â”œâ”€â”€ .env                       # Development env vars
-â”‚   â”œâ”€â”€ .env.example               # Env template
-â”‚   â”œâ”€â”€ .gitignore
-â”‚   â””â”€â”€ Dockerfile
-â”‚
-â”œâ”€â”€ ðŸ“„ docker-compose.yml          # Multi-container setup
-â”œâ”€â”€ ðŸ“„ README.md                   # Full documentation
-â”œâ”€â”€ ðŸ“„ QUICK_START.md              # Quick start guide
-â”œâ”€â”€ ðŸ“„ ARCHITECTURE.md             # Architecture details
-â”œâ”€â”€ ðŸ“„ COMPLETION_CHECKLIST.md     # Feature checklist
-â”œâ”€â”€ ðŸ“„ SETUP_INSTRUCTIONS.md       # Additional setup
-â””â”€â”€ ðŸ“„ .gitignore                  # Git ignore rules
+backend/                    # Node.js + Express Backend
+config/                 # Database configuration
+models/                 # Mongoose schemas
+controllers/            # Request handlers
+routes/                 # API routes
+middleware/             # Auth middleware
+services/               # Business logic
+utils/                  # Helper functions
+seeds/                  # Database seeding
+server.js                  # Main server file
+package.json
+.env                       # Development env vars
+.env.example               # Env template
+.gitignore
+Dockerfile
+frontend/                   # React Frontend
+ src/
+components/         # Reusable UI components
+pages/              # Page components
+layouts/            # Layout wrapper
+context/            # Auth context
+hooks/              # Custom hooks
+services/api/       # API client
+utils/              # Helper functions
+animations/         # Animation variants
+App.jsx                # Main app component
+main.jsx               # React entry point
+index.css              # Global styles
+ index.html
+ vite.config.js
+ tailwind.config.js
+ package.json
+ .env                       # Development env vars
+ .env.example               # Env template
+ .gitignore
+ Dockerfile
+docker-compose.yml          # Multi-container setup
+README.md                   # Full documentation
+QUICK_START.md              # Quick start guide
+ARCHITECTURE.md             # Architecture details
+COMPLETION_CHECKLIST.md     # Feature checklist
+SETUP_INSTRUCTIONS.md       # Additional setup
+.gitignore                  # Git ignore rules
 ```
 
 ---
 
-## ðŸ” RBAC Roles & Permissions
+## RBAC Roles & Permissions
 
-### ðŸ‘¨â€ðŸ’¼ Admin
-- âœ… View dashboard with statistics
-- âœ… Create, read, update, delete users
-- âœ… Change user roles and status
-- âœ… Search and filter users
-- âœ… View audit information
+### Admin
+- View dashboard with statistics
+- Create, read, update, delete users
+- Change user roles and status
+- Search and filter users
+- View audit information
 
-### ðŸ‘¤ Manager
-- âœ… View dashboard (no stats)
-- âœ… View non-admin users only
-- âœ… Update non-admin users only
-- âœ… Search and filter users
-- âœ… Cannot create or delete users
+### Manager
+- View dashboard (no stats)
+- View non-admin users only
+- Update non-admin users only
+- Search and filter users
+- Cannot create or delete users
 
-### ðŸ‘¥ User
-- âœ… View own profile
-- âœ… Update own profile (name, email)
-- âœ… Change own password
-- âœ… Cannot access admin features
+### User
+- View own profile
+- Update own profile (name, email)
+- Change own password
+- Cannot access admin features
 
 ---
 
-## ðŸ”„ Key Features
+## Key Features
 
 ### Authentication System
 ```
-Login â†’ JWT Access Token + Refresh Token â†’ Protected API Access
-                          â†“
-                    Token Expires?
-                          â†“
-                Play Refresh Token â†’ New Access Token
+Login  JWT Access Token + Refresh Token  Protected API Access
+Token Expires?
+Play Refresh Token  New Access Token
 ```
 
 ### User Management
@@ -133,7 +128,7 @@ Login â†’ JWT Access Token + Refresh Token â†’ Protected API Access
 
 ---
 
-## ðŸ› ï¸ Technology Stack
+## Technology Stack
 
 ### Backend
 ```
@@ -166,7 +161,7 @@ Environment Variables
 
 ---
 
-## ðŸš€ Getting Started (3 Steps)
+## Getting Started (3 Steps)
 
 ### Step 1: Backend
 ```bash
@@ -191,7 +186,7 @@ Login: admin@test.com / Admin@123456789
 
 ---
 
-## ðŸ“Š API Endpoints Summary
+## API Endpoints Summary
 
 ### Auth Endpoints
 ```
@@ -215,7 +210,7 @@ DELETE /api/users/:id               # Delete user (soft)
 
 ---
 
-## ðŸŽ¨ UI/UX Features
+## UI/UX Features
 
 ### Design System
 - **Modern SaaS Style**: Inspired by Stripe, Linear, Notion
@@ -241,41 +236,41 @@ DELETE /api/users/:id               # Delete user (soft)
 
 ---
 
-## ðŸ”’ Security Implementation
+## Security Implementation
 
 ### Password Security
-âœ… Hashed with bcryptjs (10 salt rounds)
-âœ… Minimum 8 characters
-âœ… Must contain: uppercase, lowercase, number, special character
-âœ… Never returned in API responses
+Hashed with bcryptjs (10 salt rounds)
+Minimum 8 characters
+Must contain: uppercase, lowercase, number, special character
+Never returned in API responses
 
 ### Authentication
-âœ… JWT tokens with expiration
-âœ… Separate access & refresh tokens
-âœ… Token validation middleware
-âœ… Automatic token refresh
+JWT tokens with expiration
+Separate access & refresh tokens
+Token validation middleware
+Automatic token refresh
 
 ### Authorization
-âœ… Role-based middleware
-âœ… User-owned resource protection
-âœ… Admin-only endpoints
-âœ… Manager role restrictions
+Role-based middleware
+User-owned resource protection
+Admin-only endpoints
+Manager role restrictions
 
 ### Data Validation
-âœ… Email format validation
-âœ… Input trimming
-âœ… Type checking
-âœ… Required field validation
+Email format validation
+Input trimming
+Type checking
+Required field validation
 
 ### Error Handling
-âœ… No sensitive data in errors
-âœ… Proper HTTP status codes
-âœ… Centralized error handler
-âœ… Logging for debugging
+No sensitive data in errors
+Proper HTTP status codes
+Centralized error handler
+Logging for debugging
 
 ---
 
-## ðŸ“ˆ Performance & Scalability
+## Performance & Scalability
 
 ### Frontend Optimization
 - Component memoization
@@ -297,7 +292,7 @@ DELETE /api/users/:id               # Delete user (soft)
 
 ---
 
-## ðŸ“‹ File Count & Lines of Code
+## File Count & Lines of Code
 
 ### Backend
 ```
@@ -320,38 +315,38 @@ Complete MERN application ready for production
 
 ---
 
-## âœ… Quality Checklist
+## Quality Checklist
 
-- âœ… No errors or warnings
-- âœ… No incomplete parts
-- âœ… No placeholder code
-- âœ… Clean, readable code
-- âœ… Professional structure
-- âœ… Comprehensive documentation
-- âœ… Production-ready
-- âœ… Deployment instructions
-- âœ… Security best practices
-- âœ… UI/UX excellence
+- No errors or warnings
+- No incomplete parts
+- No placeholder code
+- Clean, readable code
+- Professional structure
+- Comprehensive documentation
+- Production-ready
+- Deployment instructions
+- Security best practices
+- UI/UX excellence
 
 ---
 
-## ðŸŽ“ Learning Value
+## Learning Value
 
 This project demonstrates:
-- âœ… Full-stack development
-- âœ… Authentication & authorization
-- âœ… RBAC implementation
-- âœ… REST API design
-- âœ… React hooks & context
-- âœ… State management
-- âœ… Form handling & validation
-- âœ… Error handling
-- âœ… Modern UI/UX design
-- âœ… Docker & deployment
+- Full-stack development
+- Authentication & authorization
+- RBAC implementation
+- REST API design
+- React hooks & context
+- State management
+- Form handling & validation
+- Error handling
+- Modern UI/UX design
+- Docker & deployment
 
 ---
 
-## ðŸš€ Deployment Options
+## Deployment Options
 
 ### Option 1: Docker (Easiest)
 ```bash
@@ -370,7 +365,7 @@ docker-compose up --build
 
 ---
 
-## ðŸ“š Documentation Included
+## Documentation Included
 
 1. **README.md** - Complete project documentation
 2. **QUICK_START.md** - Get started in 5 minutes
@@ -381,18 +376,18 @@ docker-compose up --build
 
 ---
 
-## ðŸŽ¯ Perfect For
+## Perfect For
 
-- âœ… **Portfolio**: Showcase full-stack skills
-- âœ… **Internships**: Complete assessment project
-- âœ… **Learning**: Study MERN architecture
-- âœ… **Production**: Deploy immediately
-- âœ… **Interviews**: Discuss with confidence
-- âœ… **Teams**: Use as team project
+- **Portfolio**: Showcase full-stack skills
+- **Internships**: Complete assessment project
+- **Learning**: Study MERN architecture
+- **Production**: Deploy immediately
+- **Interviews**: Discuss with confidence
+- **Teams**: Use as team project
 
 ---
 
-## ðŸ’¡ Key Takeaways
+## Key Takeaways
 
 | Aspect | Highlight |
 |--------|-----------|
@@ -406,18 +401,18 @@ docker-compose up --build
 
 ---
 
-## ðŸŽ‰ Ready to Use
+## Ready to Use
 
 This is a **complete, production-ready** application. No additional work needed:
-- âœ… Build and deploy immediately
-- âœ… Use as portfolio project
-- âœ… Show to recruiters/employers
-- âœ… Learn from the codebase
-- âœ… Extend with more features
+- Build and deploy immediately
+- Use as portfolio project
+- Show to recruiters/employers
+- Learn from the codebase
+- Extend with more features
 
 ---
 
-## ðŸ“ž Support
+## Support
 
 For more information:
 - Read README.md for full details
@@ -427,8 +422,8 @@ For more information:
 
 ---
 
-**Status: âœ… COMPLETE, TESTED, AND READY FOR PRODUCTION**
+**Status: COMPLETE, TESTED, AND READY FOR PRODUCTION**
 
 **Built with modern best practices and professional standards.**
 
-ðŸš€ **Happy coding!**
+**Happy coding!**
