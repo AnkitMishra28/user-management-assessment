@@ -1,53 +1,53 @@
-# ðŸ“– START HERE - Quick Reference
+#  START HERE - Quick Reference
 
 Welcome to the **User Management System** with RBAC! This file guides you to the right documentation.
 
 ---
 
-## ðŸŽ¯ What Do You Want to Do?
+##  What Do You Want to Do?
 
-### ðŸš€ "I want to run this RIGHT NOW"
-**â†’ Read: [QUICK_START.md](QUICK_START.md)** (5 minutes)
+###  "I want to run this RIGHT NOW"
+** Read: [QUICK_START.md](QUICK_START.md)** (5 minutes)
 - Start backend: `cd backend && npm install && npm run dev`
 - Start frontend: `cd frontend && npm install && npm run dev`
 - Open: http://localhost:3000
 
-### ðŸ“š "I want to understand what this is"
-**â†’ Read: [PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md)**
+###  "I want to understand what this is"
+** Read: [PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md)**
 - Complete feature list
 - Technology stack
 - Architecture highlights
 - Use cases
 
-### ðŸ“‹ "I want full documentation"
-**â†’ Read: [README.md](README.md)**
+###  "I want full documentation"
+** Read: [README.md](README.md)**
 - Complete setup guide
 - API documentation
 - Feature details
 - Deployment options
 
-### ðŸ—ï¸ "I want to understand the architecture"
-**â†’ Read: [ARCHITECTURE.md](ARCHITECTURE.md)**
+###  "I want to understand the architecture"
+** Read: [ARCHITECTURE.md](ARCHITECTURE.md)**
 - System design
 - Data flow
 - Security implementation
 - Best practices
 
-### âœ… "What's been implemented?"
-**â†’ Read: [COMPLETION_CHECKLIST.md](COMPLETION_CHECKLIST.md)**
+###  "What's been implemented?"
+** Read: [COMPLETION_CHECKLIST.md](COMPLETION_CHECKLIST.md)**
 - Feature checklist
 - Implementation status
 - Quality assurance
 
-### ðŸ“¦ "What files are included?"
-**â†’ Read: [DELIVERY_SUMMARY.md](DELIVERY_SUMMARY.md)**
+###  "What files are included?"
+** Read: [DELIVERY_SUMMARY.md](DELIVERY_SUMMARY.md)**
 - File breakdown
 - Component descriptions
 - Statistics
 
 ---
 
-## ðŸ”‘ Demo Credentials
+##  Demo Credentials
 
 After running `npm run seed`:
 
@@ -59,22 +59,22 @@ After running `npm run seed`:
 
 ---
 
-## ðŸ“ Project Structure
+##  Project Structure
 
 ```
 UserManagementSystem_InternAssessment/
-â”œâ”€â”€ backend/           â† Node.js API
-â”œâ”€â”€ frontend/          â† React App
-â”œâ”€â”€ docker-compose.yml â† Docker setup
-â”œâ”€â”€ README.md          â† Full guide
-â”œâ”€â”€ QUICK_START.md     â† Fast setup
-â”œâ”€â”€ ARCHITECTURE.md    â† Design
-â””â”€â”€ docs/              â† All documentation
+ backend/            Node.js API
+ frontend/           React App
+ docker-compose.yml  Docker setup
+ README.md           Full guide
+ QUICK_START.md      Fast setup
+ ARCHITECTURE.md     Design
+ docs/               All documentation
 ```
 
 ---
 
-## âš¡ Common Commands
+##  Common Commands
 
 ### Backend
 ```bash
@@ -103,20 +103,20 @@ docker-compose down        # Stop services
 
 ---
 
-## âœ¨ Key Features
+##  Key Features
 
-âœ… Complete MERN stack
-âœ… Role-based access control (3 roles)
-âœ… JWT authentication
-âœ… Beautiful modern UI
-âœ… Fully responsive
-âœ… Docker ready
-âœ… Production-ready
-âœ… Well documented
+ Complete MERN stack
+ Role-based access control (3 roles)
+ JWT authentication
+Beautiful modern UI
+ Fully responsive
+ Docker ready
+ Production-ready
+ Well documented
 
 ---
 
-## ðŸ”’ Roles & Permissions
+## Roles & Permissions
 
 ### Admin
 - Create/edit/delete users
@@ -133,7 +133,7 @@ docker-compose down        # Stop services
 
 ---
 
-## ðŸ“Š Technology Stack
+##  Technology Stack
 
 **Backend:**
 - Node.js + Express
@@ -150,7 +150,7 @@ docker-compose down        # Stop services
 
 ---
 
-## ðŸ› Troubleshooting
+##  Troubleshooting
 
 ### "Port already in use"
 ```bash
@@ -173,7 +173,7 @@ taskkill /PID <PID> /F
 
 ---
 
-## ðŸ“š Reading Order (Recommended)
+##  Reading Order (Recommended)
 
 1. **This file** (You're here!) â† Overview
 2. **QUICK_START.md** â† Get it running
@@ -184,7 +184,7 @@ taskkill /PID <PID> /F
 
 ---
 
-## ðŸŽ¯ Next Steps
+## Next Steps
 
 ### Step 1: Setup (5 min)
 ```bash
@@ -216,7 +216,7 @@ npm run dev
 
 ---
 
-## ðŸš€ Deployment
+##  Deployment
 
 ### Docker (Easiest)
 ```bash
@@ -232,7 +232,7 @@ See [README.md](README.md) for detailed deployment steps.
 
 ---
 
-## ðŸ“ž Need Help?
+##  Need Help?
 
 | Question | Answer |
 |----------|--------|
@@ -244,7 +244,7 @@ See [README.md](README.md) for detailed deployment steps.
 
 ---
 
-## âœ¨ Key URLs (After Running)
+## Key URLs (After Running)
 
 | Service | URL |
 |---------|-----|
@@ -255,13 +255,13 @@ See [README.md](README.md) for detailed deployment steps.
 
 ---
 
-## ðŸŽ‰ You're All Set!
+##  You're All Set!
 
 Everything is ready to go. Start with QUICK_START.md and you'll be running in minutes.
 
-**Happy coding! ðŸš€**
+**Happy coding! 
 
 ---
 
 *Last Updated: 2024*
-*Status: âœ… Complete & Production-Ready*
+*Status:  Complete & Production-Ready*
