@@ -1,0 +1,11 @@
+import { SettingsPage } from './pages/SettingsPage';
+
+// Add this route to the Routes in App.jsx after the profile route:
+// <Route
+//   path="/settings"
+//   element={
+//     <AppLayout>
+//       <SettingsPage />
+//     </AppLayout>
+//   }
+// />

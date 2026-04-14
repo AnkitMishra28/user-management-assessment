@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-core: #030024;
+  --bg-glow: #11164a;
+  --accent-green: #35e2a7;
+  --accent-cyan: #69dbff;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes starPulse {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+@keyframes meteorMove {
+  0% {
+    transform: translate(-10%, -20%) rotate(18deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(130%, 140%) rotate(18deg);
+    opacity: 0;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slideInFromLeft {
+  animation: slideInFromLeft 0.3s ease-out;
+}
+
+.security-bg {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 14%, rgba(26, 194, 150, 0.12), transparent 32%),
+    radial-gradient(circle at 80% 16%, rgba(95, 126, 255, 0.18), transparent 38%),
+    radial-gradient(circle at 50% 85%, rgba(54, 74, 204, 0.22), transparent 44%),
+    linear-gradient(165deg, var(--bg-core), #06002f 48%, #050025);
+}
+
+.security-stars {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.55) 1px, transparent 1px),
+    radial-gradient(rgba(145, 178, 255, 0.3) 1px, transparent 1px);
+  background-size: 80px 80px, 120px 120px;
+  background-position: 0 0, 26px 44px;
+  animation: starPulse 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.security-meteor {
+  position: absolute;
+  top: -10%;
+  left: -16%;
+  width: 190px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(176, 230, 255, 0.95), rgba(255, 255, 255, 0));
+  filter: drop-shadow(0 0 8px rgba(176, 230, 255, 0.8));
+  animation: meteorMove 7.5s linear infinite;
+  pointer-events: none;
+}
+
+.security-meteor.delay-2 {
+  top: 4%;
+  left: -22%;
+  width: 140px;
+  animation-delay: 2.8s;
+}
+
+.security-title {
+  color: #f1f5ff;
+  text-wrap: balance;
+}
+
+.security-title::first-line {
+  color: var(--accent-green);
+}
+
+.security-card {
+  border: 1px solid rgba(137, 169, 255, 0.24);
+  background: linear-gradient(
+    180deg,
+    rgba(12, 20, 82, 0.56) 0%,
+    rgba(8, 14, 62, 0.68) 55%,
+    rgba(13, 24, 90, 0.42) 100%
+  );
+  box-shadow:
+    inset 0 1px 0 rgba(194, 211, 255, 0.22),
+    0 30px 80px rgba(2, 4, 24, 0.45);
+  backdrop-filter: blur(14px);
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
